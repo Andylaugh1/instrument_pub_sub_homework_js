@@ -41,7 +41,7 @@ InstrumentFamilies.prototype.setUpEvent = function () {
 
 InstrumentFamilies.prototype.publishInstrumentFamilyDetail = function(instrumentFamilyIndex) {
   const selectedInstrumentFamily = this.instrumentFamilies[instrumentFamilyIndex];
-  PubSub.publish('InstrumentFamilies:ready', selectedInstrumentFamily);
+  PubSub.publish('InstrumentFamily:ready', selectedInstrumentFamily);
 };
 
 module.exports = InstrumentFamilies;
